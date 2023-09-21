@@ -13,7 +13,7 @@ class listItem extends HTMLElement{
     * {
         margin: 0;
         padding: 0;
-        box-sizing: border-box; /* Perbaikan penulisan "box-sizing" */
+        box-sizing: border-box; 
     }
 
     .card {
@@ -27,7 +27,7 @@ class listItem extends HTMLElement{
     .poster {
         max-width: 100%; 
         max-height: 100%; 
-        object-fit: cover;\
+        object-fit: cover;
     }
 
     .film-info {
