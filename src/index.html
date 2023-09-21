@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container max-w-screen-lg mx-auto flex gap-4 items-center px-4 "></div>
+    <header class="text-white bg-dark w-full">
+        <nav class="flex justify-between py-6 container max-w-screen-lg mx-auto items-center content-center px-4">
+            <div class="">
+                <h1 class="text-lg font-bold">Cari<span class="bg-primary p-2 rounded-md ml-1">Film</span></h1>
+            </div>
+            <div class="hidden lg:block">
+                <ul class="flex gap-4">
+                    <li><a href="" class="hover:opacity-5">Tentang</a></li>
+                    <li><a href="" class="hover:opacity-5">Cari</a></li>
+                </ul>
+            </div>
+            <button class="flex h-7 w-7 flex-col justify-around lg:hidden">
+                <span class="h-[0.2rem] w-full rounded-full bg-white"></span>
+                <span class="h-[0.2rem] w-full rounded-full bg-white"></span>
+                <span class="h-[0.2rem] w-full rounded-full bg-white"></span>
+            </button>
+        </nav>
+    </header> 
+    <main class="bg-dark"> 
+        <section class=" bg-gradient-to-tl from-dark to-super-dark text-white">
+            <div class="container max-w-screen-lg flex mx-auto px-4 py-20 lg:py-32 items-center flex-col lg:flex-row gap-y-10">
+                <div class="flex flex-col px-4 gap-4 lg:items-start">
+                    <h1 class="text-lg font-bold uppercase lg:text-4xl text-primary">Situs 
+                        <span class="bg-primary py-1 px-2 rounded-md text-white">Cari Film</span></h1>
+                    <p class="text-xs lg:text-base">Disini kamu bebas mau cari film apa aja yang kamu suka, mulai dari film action sampe film drama, semoga submission saya nilainya sempurna</p>
+                    <button class="z-10 rounded-lg bg-primary-hover to-blue py-4 px-4 uppercase font-semibold bg-super-dark text-white shadow-xl backdrop-blur-md">selengkapnya</button>
+                </div>
+                <div class="">
+                    <img src="img/hero.png" alt="">
+                </div>
+            </div>
+        </section>
+        <search-bar class="bg-dark text-white">
+
+        </search-bar>
+        <list-container></list-container>
+        <style>
+            list-container{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1rem;
+                justify-content: center;
+                padding-block: 5rem;
+            }
+        </style>
+    </main>
+    <footer class="bg-super-dark text-white">
+        <div class="container max-w-screen-lg mx-auto flex justify-between px-10 py-16 text-xs">
+            <div>
+                <h1> Copy Right @Jerry.D</h1>
+            </div>
+            <div class="flex gap-5">
+                <a href=""><img src="./img/instagram.svg" alt=""></a>
+                <a href=""><img src="./img/discord.svg" alt=""></a>
+                <a href=""><img src="./img/facebook.svg" alt=""></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
+
