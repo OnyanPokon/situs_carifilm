@@ -1,4 +1,5 @@
 import main from "../src/script/main.js";
+import axios from "axios";
 import  './component/serach.js';
 import './style/output.css';
 import discord from './img/discord.svg';

@@ -1,15 +1,20 @@
+const axios = require('axios');
+
 class Data{
     static searchFilm(keyword) {
-        const endpoint = `http://www.omdbapi.com/?apikey=1214fde9&s=${keyword}`;
-        return fetch(endpoint)
-            .then(response => response.json())
-            .then(responseJson => {
-                if (responseJson.Search) {
-                    return Promise.resolve(responseJson.Search);
-                } else {
-                    return Promise.reject(`${keyword} tidak ditemukan`);
+        const apikey = '1214fde9'
+        const endpoint = `http://www.omdbapi.com/?apikey=${apikey}&s=${keyword}`;
+        return axios.get(endpoint)
+            .then(response => {
+                if(response.data.Search){
+                    return response.data.Search;
+                }else{
+                    throw new Error(`${keyword} tidak ditemukan`);
                 }
-            });
+            })
+            .catch(error => {
+                throw error;
+            })
     }
 }
 
